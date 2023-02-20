@@ -32,17 +32,67 @@ header{
     font-size: 36px;
     line-height: 45px;
     cursor: pointer;
-    margin-left: 80px;
 }
 .nav-a-container{
-    width: 1100px;
+    width: 1300px;
     display: flex;
-    justify-content: space-between;
 }
-.home{
-    text-decoration: underline;
-    height: 70px;
+
+.head{
+  width: 90%; 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
 }
+
+.mainA{
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.mainA-a{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: white;
+}
+
+.headP{
+  width: 160px;
+  text-align: center;
+  font-family: "Kreon";
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-30px);
+  z-index: -1;
+  opacity: 0;
+  transition-duration: 1s;
+  padding-left: 20px;
+}
+.headP p{
+  margin-top: 10px;
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+}
+
+.mainA:hover>.headP{
+  overflow: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 1s;
+}
+
 .p1-header{
     width: 100%;
     height: 135px;
@@ -100,18 +150,6 @@ header{
     display: flex;
     justify-content: center;
 }
-.nav-p1{
-    width: 613px;
-    height: 68px;
-    font-family: 'Kreon';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 65px;
-    line-height: 82px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: flex-start;
-}
 .nav-p2{
     width: 547px;
     height: 70px;
@@ -130,6 +168,35 @@ header{
     width: 542px;
     height: 20px;
     padding-top: 30px;
+}
+.nav-p1 {
+  width: 613px;
+  height: 68px;
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 82px;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition-duration: 1s;
+}
+.nav-p1:hover,
+.nav-p1:focus {
+  text-shadow: 0 0 2px rgb(152, 25, 25);
+  margin-left: 0.5em;
+  outline: none;
+  position: relative;
+
+}
+.nav-p1::before {
+  content: '>';
+  position: absolute;
+  color: transparent;
+  left: -1em;
+  color: white;
 }
 /* .............................. */
 html, body, div, span, applet, object, iframe,
@@ -289,6 +356,9 @@ height: 35%;
         top: 55%;
         left: 70%;
         transform: translate(-30%, -50%);
+      }
+      .name-about-myselg-b{
+        font-family:"Knewave";
       }
       /* ..................... */
       .karta-container{
