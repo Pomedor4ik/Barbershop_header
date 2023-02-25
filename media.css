@@ -1,0 +1,28 @@
+@media screen and (min-width: 425px) {
+    .header{
+        width: 425px;
+        margin: 0 auto;
+    }
+    .BG{
+        top: 0%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .nav-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 90%;
+        height: 41px;
+        margin-top: 110px;
+        margin-left: 40px;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;  
+        cursor: pointer;
+    }
+}
