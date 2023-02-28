@@ -19,8 +19,7 @@ header{
     color: white;
     width: 90%;
     height: 41px;
-    margin-top: 110px;
-    margin-left: 40px;
+    padding-top: 110px;
     font-family: 'Kreon';
     font-style: normal;
     font-weight: 400;
@@ -34,18 +33,29 @@ header{
     padding-bottom: 30px;
 }
 .nav-a-container{
-    width: 1300px;
+    width: 80%;
     display: flex;
+    justify-content: center;
 }
 
 .head{
   width: 90%; 
   position: relative;
   display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
-}
+  justify-content: space-around;
 
+}
+.popup-mark {
+  text-decoration: none;
+  color: #a6d400;
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  margin-left: 10px;
+  margin-bottom: 47px;
+}
 .mainA{
   width: 200px;
   height: 100px;
@@ -694,15 +704,86 @@ height: 35%;
         line-height: 25px;
         color: #FFFFFF;
       }
-@media screen and (min-width: 425px) {
-  .header{
-      width: 425px;
-      margin: 0 auto;
-  }
-  .BG{
-      top: 0%;
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-  }
-}
+      .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.8s ease 0s;
+    }
+    
+    .popup:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .popup:target .popup-content {
+        opacity: 1;
+        transition: all 0.8s ease 0s;
+        transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    }
+      
+    
+    .popua-area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+      }
+    
+    .popup-body {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+        transition: all 0.8s ease 0s;
+    }
+    .popup-content {
+        background-color: white;
+        color: black;
+        max-width: 800px;
+        padding: 30px;
+        position: relative;
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    }
+    .popup-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    
+    }
+    
+    .popup-title {
+        text-align: center;
+        color: #000000;
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        font-size: 40px;
+        margin: 0px 0px 1em 0px;
+    }
+    
+    .popup-text {
+        text-align: center;
+        font-size: 20px;
+        margin: 0px 0px 1em 0px;
+        color: #000000;
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 25px;
+    }

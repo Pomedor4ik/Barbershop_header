@@ -1,28 +1,161 @@
-@media screen and (min-width: 425px) {
+@media (min-width: 425px) and (max-width: 800px){
     .header{
-        width: 425px;
+        width: 100%;
         margin: 0 auto;
+        height: 265px;
     }
-    .BG{
+    .BG-phone{
         top: 0%;
         width: 100%;
         position: absolute;
         z-index: -1;
     }
-    .nav-header{
+    .nav-header-phone{
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         width: 90%;
         height: 41px;
-        margin-top: 110px;
-        margin-left: 40px;
+        padding-top: 40px;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 45px;
+        cursor: pointer;
+    }
+    .nav-a-container-mobile{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .head-mobile{
+        width: 90%; 
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .img-logo-phone{
+        width: 71px;
+        height: 79px;
+        padding-bottom: 50px;
+        padding-left: 40px;
+    }
+    .p1-header-mobile{
+        width: 100%;
+        height: 60px;
         font-family: 'Kreon';
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
-        line-height: 45px;  
+        font-size: 30px;
+        line-height: 121px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .p2-header-mobile{
+        width: 100%;
+        height: 65px;
+        font-family: 'Moon Dance';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 80px;
+        color: goldenrod;
+        text-align: center;
+    }
+    .price-list-mobile{
+        width: 100%;
+        margin-top: 0;
+    }
+    .popup-mark-mobile{
+        text-decoration: none;
+        color: #a6d400;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 45px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .mainA-a-mobile{
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 45px;
+        color: white;
+    }
+    .headP-mobile{
+        display: none;
+    }
+    .price-list-mobile{
+        width: 100%;
+        height: 210px;
+    }
+    .Price-List-p-mobile{
+        width: 100%;
+        height: 43.15px;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1px;
+
+        color: #FFFFFF;
+        padding-top: 28px;
+    }
+    .nav-price-mobile{
+        width: 100%;
+        padding: 0;
+    }
+    .nav-ul-price-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    .nav-p1-mobile{
+        width: 293px;
+        height: 20px;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 82px;
         cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition-duration: 1s;
+    }
+    .nav-p2-mobile{
+        width: 347px;
+        height: 20px;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1px;
+        text-align: center;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-img-price-mobile{
+        width: 142px;
+        height: 10px;
+        padding-top: 7px;
+        display: flex;
+        align-items: center;
     }
 }
