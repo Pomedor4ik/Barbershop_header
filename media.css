@@ -1,4 +1,4 @@
-@media (min-width: 425px) and (max-width: 800px){
+@media (min-width: 320px) and (max-width: 800px){
     html{
         width: 100%;
         height: auto;
@@ -50,6 +50,9 @@
         height: 79px;
         padding-bottom: 50px;
         padding-left: 40px;
+    }
+    .popup-mark-mobile{
+        display: none;
     }
     .p1-header-mobile{
         width: 100%;
@@ -173,7 +176,7 @@
         color: white;
     }
     .name-mobile{
-        width: 300px;
+        width: 280px;
         position: absolute;
         font-size: 18px;
         font-family: "Kreon";
