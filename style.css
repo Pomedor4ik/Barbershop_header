@@ -114,6 +114,10 @@ header{
   transform: translateY(0);
   transition-duration: 1s;
 }
+.register-href{
+  text-decoration: none;
+  color: white;
+}
 .CallLi{
   width: 120px;
   height: 50px;
