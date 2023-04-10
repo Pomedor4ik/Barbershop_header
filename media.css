@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 800px){
+@media (min-width: 425px) and (max-width: 800px){
     html{
         width: 100%;
         height: auto;
@@ -360,6 +360,10 @@
         height: 80px;
         margin-top: 10px;
         margin-left: 28px;
+    }
+    .footerblockthree-mobile-ul::-webkit-scrollbar{
+        height: 200px;
+        overflow: scroll;
     }
     .footerblockthree-mobile{
         width: 100%;

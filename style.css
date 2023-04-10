@@ -60,7 +60,7 @@ header{
 }
 .popup-mark {
   text-decoration: none;
-  color: #a6d400;
+  color: #979797;
   font-family: 'Kreon';
   font-style: normal;
   font-weight: 400;
@@ -649,6 +649,7 @@ height: 35%;
         line-height: 25px;
         color: #FFFFFF;
       }
+      /* ................ */
       .popup {
         position: fixed;
         width: 100%;
